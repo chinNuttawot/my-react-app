@@ -66,7 +66,7 @@ const MyTextInput: React.FC = () => {
     const RenderView = () => {
         return <>
             {mainItems.map((v, k) =>
-                <ul className="Ui" style={{ listStyle: 'none', paddingLeft: '10px', marginTop: '1rem' }}>
+                <ul className="Ui" style={{ listStyle: 'none', paddingLeft: '10px', marginTop: '1rem' }} key={k}>
                     {
                         v.map((item, index) => (
                             <li
